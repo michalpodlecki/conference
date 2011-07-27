@@ -1,1 +1,0 @@
-<h2>Dziękujemy za skorzystanie z systemu i zapraszamy ponownie</h2>
