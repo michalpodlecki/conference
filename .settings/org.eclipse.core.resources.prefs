@@ -1,0 +1,14 @@
+#Sun Mar 06 17:57:43 CET 2011
+eclipse.preferences.version=1
+encoding//app/controllers/users_controller.php=UTF-8
+encoding//app/models/user.php=UTF-8
+encoding//app/views/elements/menu.ctp=UTF-8
+encoding//app/views/elements/menu_prawe.ctp=UTF-8
+encoding//app/views/layouts/default.ctp=UTF-8
+encoding//app/views/pages/home.ctp=UTF-8
+encoding//app/views/users/add.ctp=UTF-8
+encoding//app/views/users/edit.ctp=UTF-8
+encoding//app/views/users/error_add.ctp=UTF-8
+encoding//app/views/users/login.ctp=UTF-8
+encoding//app/views/users/view.ctp=UTF-8
+encoding//app/views/users/wylogowano.ctp=UTF-8

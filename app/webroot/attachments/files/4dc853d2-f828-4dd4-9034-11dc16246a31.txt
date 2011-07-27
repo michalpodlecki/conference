@@ -1,0 +1,59 @@
+klasa Produkt
+--------------
+|
+|
+-> pola (wszystkie s¹ prywatne):
+  float cena;
+  String jednostka;
+  int ilosc;
+  String nazwa;
+  int nrID;
+|
+|
+-> metody:
+  float getCena()
+  void setcena()
+  String getJednostka()
+  void setJednostka()
+  int getIlosc()
+  void setIlosc()
+  String getNazwa()
+  void setNazwa()
+  int getNrID()
+  void setNrID()
+|
+|
+-> konstruktor:
+  Produkt(float cena, String jednostka, int ilosc, String nazwa, int nrID) - tworzy produkt z podanych danych
+|
+|
+-> TESTY:
+  1. Wprowadzam cenê dla produktu 20.00z³. Czy cena dla tego produktu wynosi 20.00z³?
+  2. Dodajê nowy produkt. Sprawdzam, czy jego nrID jest inny od pozosta³ych.
+  3. Wprowadzam nazwê produktu. Sprawdzam, czy zwrocona nazwa produktu jest identyczna.
+  4. Wprowadzam jednostkê produktu jako ci¹g liter i liczb. Sprawdzam, czy generowany jest b³¹d.
+
+@@@@@@@@@@@@@@@
+
+klasa Baza
+-----------
+|
+|
+-> pola (w tym przypadku polami s¹ listy zawierajace dane produktow, zamowien oraz dane klientow)
+|
+|
+-> metody:
+  void dodajProdukt(Produkt p) - dodaje produkt do listy (bazy) produktow
+  void dodajUsera(User u) - dodaje nowego uzytkownika
+  void dodajZamowienie(Zamowienie z) - dodaje zamowienie do listy
+  List<Zamowienie> getZamowienia(User u) - zwraca liste wszystkich zamowien zlozonych przez danego uzytkownika
+  void Logowanie(User u, String haslo) - loguje u¿ytkownika i zapamietuje go w sesji lub do momentu wylogowania
+|
+|
+-> TESTY:
+  1. Dodajê produkt do bazy, po czym sprawdzam, czy produkt znajduje siê w niej.
+  2. Dodajê nowego u¿ytkownika, po czym sprawdzam, czy u¿ytkownik mo¿e siê zalogowaæ.
+  3. Dodajê zamówienie do bazy, sprawdzam, czy przynale¿y ono do odpowiedniego u¿ytkownika.
+  4. Sprawdzam, czy lista zamowien zwrocona przez metode getZamowienia(User u) jest zgodna z rzeczywistoœci¹.
+  5. Logujê siê jako u¿ytkownik, sprawdzam, czy jestem widziany w ca³ej sesji.
+  6. Wylogowywujê siê, sprawdzam, czy moja obecnoœæ nie zosta³a zarejestrowana.

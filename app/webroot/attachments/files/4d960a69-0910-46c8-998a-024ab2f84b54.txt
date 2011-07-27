@@ -1,0 +1,106 @@
+Typ projektu: System Zarządzania Konferencją
+
+Jest to oprogramowanie oparte o technologię Web, wspierające organizowanie konferencji naukowych. 
+Ma za zadanie pomagać organizatorom, autorom i recenzentom w wypełnianiu ich obowiązków. 
+
+System obsługi konferencji charakteryzuje się następującymi funkcjami:
+	- Utworzenie strony Web konferencji
+	- Wysyłka maili z informacją o konferencji do wybranych adresatów
+	- Możliwość rejestracji na stronie dla uczestników konferencji
+	- Możliwość elektronicznego zgłaszania artykułów
+	- Możliwość edycji zgłoszeń
+	- System korespondencji masowej do zarejestrowanych użytkowników
+	- Przypisanie różnych ról do użytkowników (recenzenci, wykładowcy, uczestnicy, słuchacze)
+	- Obsługa konferencji cyklicznych (np. rocznych) zachowując ustawienia i zmieniając tylko daty
+
+System jest tworzony w ramach przedmiotu „Projekt zespołowy”. Projekt jest wykonywany w grupie 15 osób, która jest złożona z podgrup 2-4 osobowych.
+Wykonanie systemu jest podzielone na moduły, które w sumie tworzą cały system. Projekt zakłada utworzenie następujących modułów: Autor, 
+Organizator (Chair), Użytkownik (User), Recenzent, Admin, które w sumie tworzą cały „System zarządzania konferencjami”. 
+
+System będzie oparty na technologii PHP oraz MySQL. Zaletą tych technologii jest bardzo dobrze sporządzona dokumentacja, 
+łatwość użytkowania oraz brak opłat za licencje. PHP oraz MySQL są rozpowszechniane na darmowej licencji GNU.
+
+Na potrzeby realizacji tegoż projektu każda z w/w podgrup ma za zadanie opracować i zaimplementować jeden z wymienionych modułów.
+
+I. Usprawnienia zwiększające wydajność pracy nad projektem.
+
+
+a) Zastosowanie systemu kontroli wersji typu GIT lub SubVersion
+W przypadku wspomnianego projektu istotnym zagadnieniem jest kontrolowanie wersji kodu źródłowego, który często jest modyfikowany w sposób rozproszony przez 
+wielu programistów. Systemy kontroli wersji ułatwiają grupową pracę wielu programistów nad jednym projektem. 
+Pozwalają one na współbieżną współpracę poprzez internet wielu osób nad tym samym kodem źródłowym.
+Rozdzielenie projektu na podprojekty powoduje zwiększenie znaczenia integrowania wielu zmian oraz zarządzania nimi 
+(np. śledzenie zmian niezależnie od np. przemieszczania się plików itp.). Do takich systemów zaliczyć można np. CVS, Subversion, svk, Git, Bazaar 
+i inne. Wiele dużych, komercyjnych środowisk programistycznych zintegrowanych jest w system kontroli wersji.
+
+b) Należy ustalić stały termin, regularnie odbywających się testów poszczególnych części projektu.
+ Ma to na celu zapewnienie stałej kontroli poprawności wykonywanej przez programistów pracy. 
+ Wyznaczenie osób odpowiedzialnych za wykonanie testów, na których podstawie zostanie sporządzony raport, następnie 
+ zdanie raportu do kierownika projektu. 
+ Testerzy powinni przejawiać specyficzny rodzaj ignorancji czy co więcej -naiwności w odniesieniu do testowanego systemu.
+Cechy dobrego testera:
+- nie obawia się reakcji na złe wiadomości, które przynosi
+- potrafi rozdzielić błąd od osoby, która go popełniła
+- informację o znalezionym błędzie potrafi przedstawić w neutralny sposób
+Aby zoptymalizować pracę testerów można korzystać ze specjalnie do tego celu zaprojektowanego systemu, tzw. Bugtracker.
+
+c) Jasne określenie podziału pracy na programistów. Kierownik realizacji projektu zwołuje zebranie zespołu programistów 
+w celu przedyskutowania jak najbardziej efektywnego podziału pracy ze względu na umiejętności i predyspozycje poszczególnych osób. 
+Skutecznym może okazać się podzielenie zespołu na kilkuosobowe grupy i przydzielenie do nich realizacji poszczególnych elementów projektu. 
+Każda grupa powinna posiadać przedstawiciela, który będzie odpowiedzialny za wywiązywanie się z pracy przez członków grupy.
+Dzięki podziałowi programistów na grupy, możemy w jednym czasie pracować nad różymi etapami projektu.
+
+d) Stworzenie harmonogramu realizacji zadania.
+Jednym z trzech podstawowych parametrów, który definiuje i jednocześnie ogranicza w/w projekt jest czas, któremu w planowaniu projektu i jego
+monitorowaniu poświęca się szczególną uwagę. Harmonogram to określony w czasie porządek realizacji zadań w projekcie.
+Harmonogram realizacji projektu określa rozbicie całości pracy na poszczególne zadania wraz z ustaleniem czasu realizacji tychże 
+zadań. Głównymi składowymi harmonogramu są zadania, zależności między nimi, czas trwania oraz alokacja zasobów do poszczególnych zadań.
+Pomocne przy układaniu harmonogramu są rozmaite sposoby ilustracji, jak tzw. diagramy Gantta.
+
+e) Zarządzanie ryzykiem.
+Na każdym etapie projektu informatycznego jest mnóstwo kluczowych elementów, o których nic nie wiemy. 
+Tymczasem głównym zagrożeniem dla projektu (nie tylko informatycznego) nie jest to co wiemy, ale to czego nie wiemy. 
+Niewiedzy nie można wyeliminować, ale poprzez zarządzanie ryzykiem można ograniczyć jej skutki.
+Zarządzanie ryzykiem powinno odbywać się w sposób ciągły:
+	- Określenie co może pójść źle
+	- Określenie które ryzyka powinny zostać uwzględnione w planie projektu
+	- Realizacja planu zarządzania ryzykiem (akcje podejmowane w celu ograniczenia i tłumienia skutków)
+
+II. Usprawnienia zwiększające jakość produktu.
+
+a) Tworzenie kodu źródłowego zgodnie z ogólnie przyjętymi konwencjami ułatwia jego odczyt, zrozumienie oraz późniejsze rozwijanie. 
+Wszystkie zmienne, funkcje/metody oraz ich argumenty powinny zostać dokładnie opisane przed ich pierwszym zadeklarowaniem. 
+Bardziej złożone i skomplikowane bloki kodu powinny być jasno skomentowane, umożliwiając nie tylko pozostałym programistom, 
+ale i ich twórcy późniejsze odczytanie ich sensu i postawionego im zadania. Kod powinien być czytelny, stosowanie odstępów i wcięć 
+zwiększa przejrzystość oraz zmniejsza prawdopodobieństwo wystąpienia błędów.
+
+b) Stworzenie dokumentacji która szczegółowo opisuje założenia projektu.
+Ważnym elementem w tworzeniu dokumentacji jest opisanie procesów biznesowych z wykorzystaniem przypadków
+użycia. Przypadki użycia są półformalne, każdy proces jest opisany jako sekwencja kroków, która po sobie występuje.
+Każdy krok jest opisywany w języku naturalnym, zrozumiałym. Opis procesów biznesowych za pomocą przypadków użycia
+jest dobrym sposobem do przedstawienia projektu. Dzięki naturalnemu opisowi projekt może być zaprezentowany nie tylko informatykom
+lecz również klientowi, który zamawia oprogramowanie. Dzięki takiemu podejścu już na początku tworzenia projektu, można ustalić założenia
+projektu, rozwiązania, które najlepiej będą odpowiadały klientowi.
+
+c) Stworzenie dokumentacji użytkowej
+Podstawowe składowe dokumentacji użytkowej to:
+- Opis funkcjonalny. Jest to wstępna część dokumentacji, która w zwarty sposób opisuje przeznaczenie i główne możliwości systemu.
+Opis funkcjonalny powinien dostarczyć osobie rozważającej zakup lub wykorzystanie systemu niezbędnych informacji pozwalających ocenić czy system
+spełnia jej potrzeby. Opis funkcjonalny jest też przydatny początkującym użytkownikom, którzy nie znają jeszcze dobrze
+możliwości systemu.
+- Podręcznik użytkownika. Jest to opis systemu przeznaczony głównie dla początkujących użytkowników. Część ta powinna zawierać informacje o:
+	- sposobach uruchamiania oraz kończenia pracy z systemem,
+	- sposobach realizacji najczęściej wykorzystywanych funkcji systemu,
+	- metodach obsługi błędów, np. o sposobach odwoływania błędnych operacji wykonanych przez użytkownika,
+	- sposobach korzystania z systemu pomocy.
+
+	Podręcznik użytkownika powinien przedstawiać prosty przykład korzystania z systemu.
+
+- Kompletny opis. Jest to część przeznaczona głównie dla doświadczonych użytkowników. Powinna zawierać:
+	- szczegółowy opis wszystkich funkcji systemu,
+	- informacje o wszystkich sposobach wywoływania danych funkcji,
+	- opisy formatów danych
+	- opisy błędów, które mogą się pojawiać podczas pracy z systemem,
+	- informacje o wszelkich ograniczeniach dotyczących np. zakresów danych
+
+

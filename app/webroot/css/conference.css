@@ -1,0 +1,1 @@
+div.input {	margin: 5px 0;	overflow: hidden;}label {	width: 150px;	margin-right: 5px;	text-align: right;	font: 14px 'Trebuchet MS';	display: block;	float: left;}form {	overflow: hidden;}input {	padding: 2px;	float: left;	border: 1px solid lightblue;}input[type=submit] {	margin: 5px 20px;	font: 13px arial;	border: 1px solid red;	background: pink;	padding: 3px 10px;}
